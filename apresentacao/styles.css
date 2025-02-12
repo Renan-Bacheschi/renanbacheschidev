@@ -1,7 +1,33 @@
-body {
-    background-color: rgb(64, 64, 147);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.p {
-    color: rgb(202, 32, 32);
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+.logo-nav{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.theme-dark {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.theme-dark:hover {
+    opacity: 0.7;
 }
