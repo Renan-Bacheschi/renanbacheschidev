@@ -5,10 +5,10 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Faz com que o conteúdo ocupe toda a tela */
-    background-color: rgb(49, 87, 114);
+    background-color: white; /* Cor padrão para o modo claro */
+    color: black; /* Cor do texto no modo claro */
+    transition: background 0.3s, color 0.3s;
+    padding-top: 60px;
 }
 
 .navbar {
@@ -19,11 +19,11 @@ body {
     color: white;
     padding: 15px 20px;
     height: 60px;
-    position: fixed; /* Mantém o header fixo no topo */
+    position: fixed; /* Mantendo o header fixo no topo */
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+    z-index: 1000; /* Garantindo que o header fique acima de outros elementos */
 }
 
 
@@ -68,6 +68,11 @@ body {
     opacity: 0.7;
 }
 
+.dark-mode {
+    background-color: #121212; 
+    color: white; 
+}
+
 
 main {
     flex: 1; 
@@ -83,6 +88,7 @@ section {
 
 
 footer {
+    margin-top: 20%;
     background-color: #222;
     color: white;
     text-align: center;
