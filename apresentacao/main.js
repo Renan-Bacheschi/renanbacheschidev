@@ -6,10 +6,10 @@ const body = document.body;
 themeButton.addEventListener("click", () => {
     body.classList.toggle("dark-mode");
 
-    // Altera o ícone do botão 🌙/☀️
+    
     if (body.classList.contains("dark-mode")) {
-        themeButton.textContent = "☀️"; // Modo claro
+        themeButton.textContent = "☀️"; 
     } else {
-        themeButton.textContent = "🌙"; // Modo escuro
+        themeButton.textContent = "🌙"; 
     }
 });
