@@ -13,3 +13,8 @@ themeButton.addEventListener("click", () => {
         themeButton.textContent = "🌙"; 
     }
 });
+
+// add ano automaticamente
+const footerText = document.querySelector(".rodape");
+const currentYear = new Date().getFullYear();
+footerText.textContent = `© ${currentYear} - Todos os direitos reservados.`;
