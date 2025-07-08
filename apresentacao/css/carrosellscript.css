@@ -15,10 +15,10 @@
 }
 
 .carousel-slide {
-    min-width: 50%;
+    min-width: 33.3333%;
     box-sizing: border-box;
     position: relative;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .carousel-slide a {
