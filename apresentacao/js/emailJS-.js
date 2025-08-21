@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    emailjs.init ('service_adbxu6c');
+    emailjs.init ('xNJssMe-789Hh2ywx');
     //-------
     const contatoFormulario = document.getElementById('contato-formulario');
-    const statusFormulario = this.getElementById('formulario-status');
+    const statusFormulario = document.getElementById('status-formulario');
     //--------
 
     contatoFormulario.addEventListener('submit', function(event){
         event.preventDefault();
 
         statusFormulario.textContent = 'Enviando...';
-        statusFormulario.style.colo = '#333';
+        statusFormulario.style.color = '#333';
 
-        emailjs.sendForm('xNJssMe-789Hh2ywx', 'template_utwglwx', this)
+        emailjs.sendForm('service_adbxu6c', 'template_utwglwx', this)
         .then(function(response){
             console.log('SUCESSO!', response.status, response.text);
             statusFormulario.textContent = 'Mensagem enviada com sucesso!';
