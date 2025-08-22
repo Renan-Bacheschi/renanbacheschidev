@@ -2,16 +2,21 @@ document.addEventListener('DOMContentLoaded', function(){
     
     const options = {
         strings: [
-            " Renan. ",
-            " Desenvolvedor Front-end.",
-            "Criador de soluções Web."
+            " Renan. "
         ],
 
-        typeSpeed: 70,
+        typeSpeed: 100,
 
-        backSpeed: 50,
+        loop: false,
 
-        loop: false
+        startDelay: 1000,
+
+        // backSpeed: 1500,
+
+        // backDelay: 1500,
+     
+       showCursor: false
+        
     };
 
     const typed = new Typed('#typing-effect', options);
