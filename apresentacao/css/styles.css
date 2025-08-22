@@ -140,19 +140,19 @@ nav a:hover {
 }
 
 /* CONTATO */
-.contact-form {
+.contato-formulario {
   max-width: 500px;
   margin: 0 auto;
   text-align: left;
 }
 
-.contact-form label {
+.contato-formulario label {
   display: block;
   margin: 15px 0 5px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contato-formulario input,
+.contato-formulario textarea {
   width: 100%;
   padding: 10px;
   background: #1a1a1a;
@@ -161,7 +161,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-.contact-form button {
+.contato-formulario button {
   margin-top: 15px;
   padding: 10px 20px;
   background: #00c37a;
@@ -172,7 +172,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-.contact-form button:hover {
+.contato-formulario button:hover {
   background: #009f5a;
 }
 
