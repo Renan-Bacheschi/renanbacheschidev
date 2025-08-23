@@ -1,25 +1,23 @@
-document.addEventListener('DOMContentLoaded', function(){
-    
-    const options = {
-        strings: [
-            " Renan. "
-        ],
+document.addEventListener('DOMContentLoaded', function() {
 
-        typeSpeed: 100,
-
-        loop: false,
-
-        startDelay: 1000,
-
-        // backSpeed: 1500,
-
-        // backDelay: 1500,
-     
-       showCursor: false
-        
+    const optionsSubtitle = {
+        strings: ["Desenvolvedor Front-end."],
+        typeSpeed: 70,
+        loop: true
     };
 
-    const typed = new Typed('#typing-effect', options);
+    const optionsNome = {
+        strings: ["Renan."],
+        typeSpeed: 150,
+        loop: false,
+        showCursor: false,
+        onComplete: function() {
+            // Apenas iniciamos a segunda animação, sem guardar em constante
+            new Typed('#typing-efeito', optionsSubtitle);
+        }
+    };
 
-    const optionsSubtitle = {}
+    // Apenas iniciamos a primeira animação, sem guardar em constante
+    new Typed('#typing-name', optionsNome);
+
 });
