@@ -20,4 +20,6 @@ document.addEventListener('DOMContentLoaded', function(){
     };
 
     const typed = new Typed('#typing-effect', options);
+
+    const optionsSubtitle = {}
 });
