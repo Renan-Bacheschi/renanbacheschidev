@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const optionsSubtitle = {
         strings: ["Desenvolvedor Front-end."],
         typeSpeed: 70,
-        loop: true
+        loop: false,
+        showCursor: false
     };
 
     const optionsNome = {
