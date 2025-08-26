@@ -91,12 +91,11 @@
 }
 
 .carousel-button.prev {
-    margin: 90px;
-    left: 50px; 
+    left: -25px; 
 }
 
 .carousel-button.next {
-    right: 50px; 
+    right: -25px; 
 }
 
 .carousel-button:disabled {
