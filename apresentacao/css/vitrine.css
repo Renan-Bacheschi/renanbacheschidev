@@ -85,3 +85,40 @@
     line-height: 50px;
     transition: background-color 0.3s;
 }
+
+.carousel-button:hover {
+    background-color: #1a1a1a;
+}
+
+.carousel-button.prev {
+    margin: 90px;
+    left: 50px; 
+}
+
+.carousel-button.next {
+    right: 50px; 
+}
+
+.carousel-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Responsividade para a vitrine */
+@media (max-width: 900px) {
+    .carousel-slide {
+        min-width: calc(100% / 2); 
+    }
+}
+
+@media (max-width: 600px) {
+    .carousel-slide {
+        min-width: 100%; 
+    }
+    .carousel-button.prev {
+        left: 10px;
+    }
+    .carousel-button.next {
+        right: 10px;
+    }
+}
