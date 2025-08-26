@@ -2,9 +2,12 @@
 
 .carousel-wrapper {
     position: relative;
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1300px;
     margin: 40px auto 0 auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+    
 }
 
 .carousel-container {
@@ -34,7 +37,7 @@
 .project-info {
     text-align: left;
     background-color: #1a1a1a;
-    padding: 30px;
+    padding: 20px;
     border-radius: 8px;
     border:  1px solid #333;
     height: 100%;
@@ -60,7 +63,7 @@
     color: #000;
     font-weight: bold;
     padding: 10px 15px;
-    border-radius: 50px;
+    border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
     align-self: flex-start; 
@@ -74,18 +77,20 @@
 
 .carousel-button {
     position: absolute;
-    top: 50%;
+    top: 125px;
     transform: translateY(-50%);
     background-color: rgba(26, 26, 26, 0.8);
-    border: 1px solid #333;
+    border: 2px solid #333;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
-    border-radius: 100px;
-    width: 40px;
-    height: 40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     z-index: 10;
-    line-height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     transition: background-color 0.3s;
 }
@@ -95,11 +100,11 @@
 }
 
 .carousel-button.prev {
-    left: 0px; 
+    left: 0; 
 }
 
 .carousel-button.next {
-    right: 0px; 
+    right: 0; 
 }
 
 .carousel-button:disabled {
