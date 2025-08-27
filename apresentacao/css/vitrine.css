@@ -7,7 +7,7 @@
     margin: 40px auto 0 auto;
     padding: 0 60px;
     box-sizing: border-box;
-    
+
 }
 
 .carousel-container {
@@ -39,7 +39,7 @@
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 8px;
-    border:  1px solid #333;
+    border: 1px solid #333;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -54,19 +54,19 @@
 .project-info p {
     color: #aaa;
     flex-grow: 1;
-    margin-bottom:  20px;
+    margin-bottom: 20px;
 }
 
 .btn-projeto {
     display: inline-block;
-    background-color: #00c37a; 
+    background-color: #00c37a;
     color: #000;
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s;
-    align-self: flex-start; 
+    align-self: flex-start;
 }
 
 .btn-projeto:hover {
@@ -100,11 +100,11 @@
 }
 
 .carousel-button.prev {
-    left: 0; 
+    left: 0;
 }
 
 .carousel-button.next {
-    right: 0; 
+    right: 0;
 }
 
 .carousel-button:disabled {
@@ -115,17 +115,19 @@
 /* Responsividade para a vitrine */
 @media (max-width: 900px) {
     .carousel-slide {
-        min-width: calc(100% / 2); 
+        min-width: calc(100% / 2);
     }
 }
 
 @media (max-width: 600px) {
     .carousel-slide {
-        min-width: 100%; 
+        min-width: 100%;
     }
+
     .carousel-button.prev {
         left: 10px;
     }
+
     .carousel-button.next {
         right: 10px;
     }
