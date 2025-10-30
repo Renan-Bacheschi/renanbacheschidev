@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const optionsSubtitle = {
-        strings: ["Desenvolvedor Front-end."],
+        strings: ["Desenvolvedor Full Stack."],
         typeSpeed: 70,
         loop: false,
         showCursor: false
@@ -12,13 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
         typeSpeed: 150,
         loop: false,
         showCursor: false,
-        onComplete: function() {
-            // Apenas iniciamos a segunda animação, sem guardar em constante
+        onComplete: function() {   
             new Typed('#typing-efeito', optionsSubtitle);
         }
     };
 
-    // Apenas iniciamos a primeira animação, sem guardar em constante
     new Typed('#typing-name', optionsNome);
 
 });
