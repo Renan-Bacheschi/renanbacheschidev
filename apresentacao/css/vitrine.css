@@ -1,5 +1,3 @@
-/* container geral vitrine e os botões.. */
-
 .carousel-wrapper {
     position: relative;
     width: 100%;
@@ -23,6 +21,9 @@
     min-width: calc(100% / 3);
     box-sizing: border-box;
     padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .carousel-slide img {
@@ -30,19 +31,26 @@
     height: 250px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 75px;
+    margin-bottom: 20px; 
     border: 1px solid #333;
 }
 
 .project-info {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 320px; 
+    max-height: 340px; 
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #333;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    flex: 1 1 auto; 
+    overflow: hidden; 
 }
 
 .project-info h3 {
@@ -54,23 +62,44 @@
 .project-info p {
     color: #aaa;
     flex-grow: 1;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    text-align: left;
+    width: 100%;
+    max-height: 120px;
+    overflow: auto;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .btn-projeto {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: #00c37a;
     color: #000;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 7px 18px;
+    font-size: 1rem;
+    min-width: 120px;
     border-radius: 5px;
+    text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s;
-    align-self: flex-start;
+    transition: background 0.3s;
+    margin: 0 4px;
 }
 
 .btn-projeto:hover {
-    background-color: #009f5a;
+    background: #00ffab;
+    color: #222;
+}
+
+.btn-projeto i {
+    margin-right: 6px;
 }
 
 /* botões de navegação */
@@ -112,7 +141,7 @@
     cursor: not-allowed;
 }
 
-/* Responsividade para a vitrine */
+/* Responsividade  vitrine */
 @media (max-width: 900px) {
     .carousel-slide {
         min-width: calc(100% / 2);

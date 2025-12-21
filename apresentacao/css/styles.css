@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* BACKGROUND LUZES */
 .background-light {
   position: fixed;
   top: 0;
@@ -36,7 +34,6 @@ body {
   }
 }
 
-/* NAV */
 header {
   background-color: #0f0f0f;
   padding: 1rem 2rem;
@@ -103,7 +100,6 @@ nav a:hover {
   padding: 0 20px;
 }
 
-/* SECTIONS */
 .section {
   padding: 25px 0px;
   text-align: center;
@@ -115,7 +111,6 @@ nav a:hover {
   color: #00c37a;
 }
 
-/* CARDS */
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +141,6 @@ nav a:hover {
   color: #aaa;
 }
 
-/* CONTATO */
 .contato-formulario {
   max-width: 500px;
   margin: 0 auto;
@@ -183,7 +177,6 @@ nav a:hover {
   background: #009f5a;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -192,7 +185,6 @@ footer {
   color: #555;
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
   .cards {
     flex-direction: column;

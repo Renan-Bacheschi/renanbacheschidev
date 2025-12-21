@@ -11,7 +11,6 @@
 </head>
 
 <body>
-  <!-- Fundo com luzes -->
   <div class="background-light"></div>
 
   <header>
@@ -31,7 +30,8 @@
         <i class="fab fa-github"></i> Github
       </a>
       <a href="https://www.linkedin.com/in/renan-bacheschi-0634b3224/" target="_blank">
-        <i class="fab fa-linkedin"></i> Linkedin </a>
+        <i class="fab fa-linkedin"></i> Linkedin
+      </a>
     </div>
   </section>
 
@@ -44,7 +44,10 @@
           <p>Criação de layouts responsivos e organizados com Tailwind CSS.</p>
         </div>
         <div class="card">
-          <h3><i class="fas fa-coffee"></i> Java <i class="fas fa-database"></i> Banco De Dados</h3>
+          <h3>
+            <i class="fas fa-coffee"></i> Java <br>
+            <i class="fas fa-database"></i> Banco De Dados
+          </h3>
           <p>Desenvolvimento de sistemas back-end, criação de APIs e gerenciamento de bancos de dados.</p>
         </div>
         <div class="card">
@@ -54,6 +57,7 @@
       </div>
     </div>
   </section>
+
   <section class="section" id="projects">
     <h2>Meus Projetos</h2>
     <div class="carousel-wrapper">
@@ -63,23 +67,34 @@
             <img src="images/logo-projeto-marcenaria.png" alt="Imagem do Projeto 1">
             <div class="project-info">
               <h3>Marcenaria Menozzi</h3>
-              <p>Plataforma para a Marcenaria Menozzi,
-                referência em móveis sob medida em São Caetano do Sul.
-                O projeto foca na exposição de portfólio de alto padrão e
-                na captação inteligente de
-                clientes através de formulários estruturados.</p>
-
-              <a href="#" class="btn-projeto" target="_blank">Ver Projeto</a>
+              <p>
+                Plataforma para a Marcenaria Menozzi, referência em móveis sob medida em São Caetano do Sul.
+                O projeto foca na exposição de portfólio de alto padrão e na captação inteligente de clientes
+                através de formulários estruturados.
+              </p>
+              <div class="buttons-container">
+                <a href="#" class="btn-projeto" target="_blank">Ver Projeto</a>
+              </div>
             </div>
           </div>
 
           <div class="carousel-slide">
-            <img src="images/GitHub.jpg" alt="Imagem do Projeto 2">
+            <img src="images/GitHub.jpg" alt="Logo do Projeto Fintech">
             <div class="project-info">
-              <h3>Projeto Beta</h3>
-              <p class="testando">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea commodo.</p>
-              <a href="#" class="btn-projeto" target="_blank">Ver Projeto</a>
+              <h3>Fintech - Full Stack</h3>
+              <p>Sistema financeiro Full Stack: <b>React.js integrado a uma API REST em Java (Spring Boot)</b>
+                e banco <b>Oracle</b>.
+                Realiza CRUD completo para gestão de usuários, contas e transações.</p>
+              <div class="buttons-container">
+                <a href="https://github.com/Renan-Bacheschi/fintech-frontend-react" class="btn-projeto"
+                  target="_blank">
+                  <i class="fab fa-react"></i> Frontend
+                </a>
+                <a href="https://github.com/Renan-Bacheschi/fintech-backend-spring" class="btn-projeto"
+                  target="_blank">
+                  <i class="fas fa-coffee"></i> Backend
+                </a>
+              </div>
             </div>
           </div>
 
@@ -89,7 +104,9 @@
               <h3>Projeto Gama</h3>
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
               </p>
-              <a href="#" class="btn-projeto" target="_blank">Ver Projeto</a>
+              <div class="buttons-container">
+                <a href="#" class="btn-projeto" target="_blank">Ver Projeto</a>
+              </div>
             </div>
           </div>
 
@@ -98,7 +115,9 @@
             <div class="project-info">
               <h3>Projeto Delta</h3>
               <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
-              <a href="#" class="btn-projeto" target="_blank">Ver Projeto</a>
+              <div class="buttons-container">
+                <a href="#" class="btn-projeto" target="_blank">Ver Projeto</a>
+              </div>
             </div>
           </div>
 
@@ -107,7 +126,9 @@
             <div class="project-info">
               <h3>Projeto Épsilon</h3>
               <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
-              <a href="#" class="btn-projeto" target="_blank">Ver Projeto</a>
+              <div class="buttons-container">
+                <a href="#" class="btn-projeto" target="_blank">Ver Projeto</a>
+              </div>
             </div>
           </div>
         </div>
@@ -115,14 +136,15 @@
       <button class="carousel-button prev">&#10094;</button>
       <button class="carousel-button next">&#10095;</button>
     </div>
-
   </section>
+
   <section class="section" id="contact">
     <div class="container">
       <h2>Contato</h2>
-      <form class="contato-formulario" id="contato-formulario"><label for="name">Nome</label>
+      <form class="contato-formulario" id="contato-formulario">
+        <label for="name">Nome</label>
         <input type="text" name="name" id="name" placeholder="Seu nome..." required>
-        <label for="message">Email</label>
+        <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Seu@email.com" required>
         <label for="message">Mensagem</label>
         <textarea id="message" name="message" rows="5" placeholder="Sua mensagem..." required></textarea>
