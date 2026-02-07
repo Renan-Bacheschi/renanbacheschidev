@@ -132,3 +132,9 @@ dist
 # Keys do EmailJS
 .env
 apresentacao/js/config.js
+
+# JetBrains IDEs (WebStorm/IntelliJ)
+.idea/
+*.iml
+*.ipr
+*.iws
