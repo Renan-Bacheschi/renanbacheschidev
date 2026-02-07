@@ -17,7 +17,7 @@
     <h1>Renan</h1>
     <nav>
       <a href="#home">Home</a>
-      <a href="#projects">Projeeetos</a>
+      <a href="#projects">Projetos</a>
       <a href="#contact">Contato</a>
     </nav>
   </header>
@@ -64,11 +64,47 @@
       <div class="carousel-container">
         <div class="carousel-track">
           <div class="carousel-slide">
-            <img src="images/sos.png" alt="Motoca SOS">
+            <img src="images/sos.png" alt="MotocaParts">
             <div class="project-info">
-              <h3 style="margin-top: 0.5em;">Motoca SOS</h3>
-              <span style="display:block; color:#ffb300; font-weight:bold; margin-bottom:8px;">Em construção 🚧</span>
-              <p>Motoca SOS é uma plataforma voltada para motociclistas que conecta peças, kits de emergência e serviços essenciais, com foco em disponibilidade imediata, regras de negócio realistas e entrega rápida.<br><br>O projeto simula cenários reais de urgência, estoque, pedidos e logística, sendo desenvolvido de forma progressiva para explorar desde fundamentos de backend até arquiteturas modernas.</p>
+              <h3 style="margin-top: 0.5em;">Motoca - Parts</h3>
+              <span class="status status-dev-ativo">Em desenvolvimento ativo</span>
+              <p>Plataforma de e-commerce focada no mercado de autopeças com logística integrada a serviços de entrega via app. O sistema servirá como a base de dados central do ecossistema, viabilizando o delivery de kits de urgência através da integração de microserviços com o Motoca-SOS. Desenvolvido com Java 21 e Spring Boot, o projeto foca em um backend robusto preparado para alta disponibilidade e futuras integrações mobile.</p>
+              <div class="buttons-container">
+                <span class="btn-projeto" style="pointer-events:none; cursor:default;">Ver Projeto</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="images/sos.png" alt="MotocaParts Documentação">
+            <div class="project-info">
+              <h3>Arquitetura e Documentação – Ecossistema Motoca</h3>
+              <span class="status status-planejamento">Planejamento técnico</span>
+              <p>Documentação técnica do Ecossistema Motoca. Abrange a arquitetura baseada em DDD, padrões SOLID e a estratégia de microserviços integrados. Detalha o uso de mensageria para processamento assíncrono, conteinerização com Docker e o planejamento de infraestrutura na AWS.</p>
+              <div class="buttons-container">
+                <span class="btn-projeto" style="pointer-events:none; cursor:default;">Ver Projeto</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="images/marceMenozzi.png" alt="Marcenaria Menozzi">
+            <div class="project-info">
+              <h3 style="margin-top: 0.5em;"><i></i> Marcenaria Menozzi</h3>
+              <span class="status status-design-concluido">Desing em andamento</span>
+              <p>Plataforma para a Marcenaria Menozzi, referência em móveis sob medida em São Caetano do Sul. O projeto foca na exposição de portfólio de alto padrão e na captação inteligente de clientes através de formulários estruturados.</p>
+              <div class="buttons-container">
+                <span class="btn-projeto" style="pointer-events:none; cursor:default;">Ver Projeto</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="images/spring.png" alt="Motoca SOS — Arquitetura Spring">
+            <div class="project-info">
+              <h3 style="margin-top: 0.5em;">Motoca SOS - Spring</h3>
+              <span class="status status-arquitetura">Arquitetura em definição</span>
+              <p>Motoca SOS é a evolução do projeto inicial desenvolvido em Java puro, agora planejado com Spring Boot, foco em arquitetura limpa, separação de responsabilidades e escalabilidade.<br><br>Esta fase contempla a definição do domínio, APIs REST, regras de negócio mais robustas, testes automatizados e preparação para integrações futuras como entregas, mapas, pagamentos e pipelines de CI/CD.</p>
               <div class="buttons-container">
                 <span class="btn-projeto" style="pointer-events:none; cursor:default;">Ver Projeto</span>
               </div>
@@ -79,7 +115,7 @@
             <img src="images/logo-fintech.png" alt="Logo do Projeto Fintech">
             <div class="project-info">
               <h3>Fintech - Full Stack</h3>
-                <span style="color:#00c37a; font-weight:bold; margin-bottom: 8px;">Projeto finalizado ✔️</span>
+              <span class="status status-finalizado">Projeto finalizado</span>
               <p>Sistema financeiro Full Stack: <b>React.js integrado a uma API REST em Java (Spring Boot)</b>
                 e banco <b>Oracle</b>.
                 Realiza CRUD completo para gestão de usuários, contas e transações.</p>
@@ -95,37 +131,13 @@
           </div>
 
           <div class="carousel-slide">
-            <img src="images/marceMenozzi.png" alt="Marcenaria Menozzi">
-            <div class="project-info">
-              <h3 style="margin-top: 0.5em;"><i></i> Marcenaria Menozzi</h3>
-              <span style="display:block; color:#ffb300; font-weight:bold; margin-bottom:8px;">Em construção 🚧</span>
-              <p>Plataforma para a Marcenaria Menozzi, referência em móveis sob medida em São Caetano do Sul. O projeto foca na exposição de portfólio de alto padrão e na captação inteligente de clientes através de formulários estruturados.</p>
-              <div class="buttons-container">
-                <span class="btn-projeto" style="pointer-events:none; cursor:default;">Ver Projeto</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-slide">
             <img src="images/crud.png" alt="CRUD Veículos em Java">
             <div class="project-info">
               <h3>CRUD Veículos em Java</h3>
-                <span style="color:#00c37a; font-weight:bold; margin-bottom: 8px">Projeto finalizado ✔️</span>
+              <span class="status status-finalizado">Projeto finalizado</span>
               <p>CRUD completo de gestão de veículos desenvolvido em Java 17 e JDBC puro. O projeto foca em arquitetura DAO (Data Access Object) e manipulação de SQL manual, demonstrando domínio em persistência de dados e segurança de credenciais com arquivos de propriedades.</p>
               <div class="buttons-container">
                 <a href="https://github.com/Renan-Bacheschi/crud-veiculos-java-JDBC" class="btn-projeto" target="_blank">Ver Projeto</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-slide">
-            <img src="images/spring.png" alt="Motoca SOS — Arquitetura Spring">
-            <div class="project-info">
-              <h3 style="margin-top: 0.5em;">Motoca SOS - Spring</h3>
-              <span style="display:block; color:#ffb300; font-weight:bold; margin-bottom:8px;">📝 Em breve — arquitetura em definição</span>
-              <p>Motoca SOS é a evolução do projeto inicial desenvolvido em Java puro, agora planejado com Spring Boot, foco em arquitetura limpa, separação de responsabilidades e escalabilidade.<br><br>Esta fase contempla a definição do domínio, APIs REST, regras de negócio mais robustas, testes automatizados e preparação para integrações futuras como entregas, mapas, pagamentos e pipelines de CI/CD.</p>
-              <div class="buttons-container">
-                <span class="btn-projeto" style="pointer-events:none; cursor:default;">Ver Projeto</span>
               </div>
             </div>
           </div>
